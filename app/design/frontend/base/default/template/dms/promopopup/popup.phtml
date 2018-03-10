@@ -1,0 +1,26 @@
+<?php
+/**
+ * Sample Exercise Module
+ * @category    DMS
+ * @package     DMS_PromoPopup
+ * @date        2018-02-12
+ * @author      A. Dilhan Maduranga <admaduranga@gmail.com>
+ */
+?>
+
+<?php if ($this->isModuleEnabled()) : ?>
+    <div id="promo-popup" class="modal">
+
+    </div>
+    <?php
+    $settings = $this->getSettings();
+    $settings['popup_id'] = 'promo-popup';
+    $settings['popup_close_id'] = 'promo-popup-close';
+    ?>
+    <script type="text/javascript">
+        jQuery('document').ready(function () {
+            var promoPopup = new PromoBanner(<?php echo json_encode($settings) ?>);
+            promoPopup.init();
+        });
+    </script>
+<?php endif; ?>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sample Exercise Module
+ * @category    DMS
+ * @package     DMS_PromoPopup
+ * @date        2018-02-12
+ * @author      A. Dilhan Maduranga <admaduranga@gmail.com>
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem" ifconfig="promopopup_settings/general/enabled"><type>skin_js</type><name>js/dms/promopopup/popup.js</name></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="promopopup/popup" name="promopopup_popup" template="dms/promopopup/popup.phtml"/>
+        </reference>
+    </default>
+    <promopopup_index_index>
+        <reference name="content">
+            <block type="promopopup/popup" name="promopopup_box" template="dms/promopopup/box.phtml"/>
+        </reference>
+    </promopopup_index_index>
+</layout>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sample Exercise Module
+ * @category    DMS
+ * @package     DMS_PromoPopup
+ * @date        2018-02-12
+ * @author      A. Dilhan Maduranga <admaduranga@gmail.com>
+ */
+-->
+<config>
+    <modules>
+        <DMS_PromoPopup>
+            <version>0.1.0</version>
+        </DMS_PromoPopup>
+    </modules>
+    <frontend>
+        <routers>
+            <promopopup>
+                <use>standard</use>
+                <args>
+                    <module>DMS_PromoPopup</module>
+                    <frontName>promopopup</frontName>
+                </args>
+            </promopopup>
+        </routers>
+        <layout>
+            <updates>
+                <promopopup>
+                    <file>dms/promopopup.xml</file>
+                </promopopup>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <helpers>
+            <promopopup>
+                <class>DMS_PromoPopup_Helper</class>
+            </promopopup>
+        </helpers>
+        <blocks>
+            <promopopup>
+                <class>DMS_PromoPopup_Block</class>
+            </promopopup>
+        </blocks>
+        <resources>
+            <promopopup_setup>
+                <setup>
+                    <module>DMS_PromoPopup</module>
+                </setup>
+            </promopopup_setup>
+        </resources>
+    </global>
+    <default>
+        <promopopup_settings>
+            <general>
+                <enabled>1</enabled>
+                <wait_before>3000</wait_before>
+                <close_after>5000</close_after>
+                <static_block_id>promo_popup_content</static_block_id>
+            </general>
+        </promopopup_settings>
+    </default>
+</config> 

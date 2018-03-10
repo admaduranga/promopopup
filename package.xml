@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>DMS_PromoPopup</name>
+    <version>0.1.0</version>
+    <stability>devel</stability>
+    <license>Outside US and Canada</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Promo Popup</summary>
+    <description>Implemented to fulfill a technical test</description>
+    <notes>Beta version</notes>
+    <authors><author><name>A. Dilhan Maduranga</name><user>admaduranga</user><email>admaduranga@gmail.com</email></author></authors>
+    <date>2018-02-13</date>
+    <time>17:10:53</time>
+    <contents><target name="magelocal"><dir name="DMS"><dir name="PromoPopup"><dir name="Block"><file name="Popup.php" hash="3a9aa20225a244f4a9edd83557bef574"/></dir><dir name="Helper"><file name="Data.php" hash="d0318b7ec25528c30e954d641c418023"/></dir><dir name="controllers"><file name="IndexController.php" hash="e9acf3aec9c8c45a42a88f9819ddd364"/></dir><dir name="data"><dir name="promopopup_setup"><file name="data-install-0.1.0.php" hash="53ac8e7208c10ce49128b696c06cb18c"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="ada1a876ba3a72d0e302fb245a6f2caa"/><file name="config.xml" hash="41154d446030df8bb932c15e8bcfef45"/><file name="system.xml" hash="1a13289982abda199d9a4952d3c37ee7"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DMS_PromoPopup.xml" hash="95b101a6caeb0cd43ffb5470b967bf34"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="dms"><file name="promopopup.xml" hash="dbbc4ef5bd22ef6c3c025bcaab49447e"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="js"><dir name="dms"><dir name="promopopup"><file name="popup.js" hash="e1af1be959ac110e3b3e7da5ddde27a2"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.6.0</max></php></required></dependencies>
+</package>

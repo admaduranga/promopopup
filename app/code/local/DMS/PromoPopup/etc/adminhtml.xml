@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sample Exercise Module
+ * @category    DMS
+ * @package     DMS_PromoPopup
+ * @date        2018-02-12
+ * @author      A. Dilhan Maduranga <admaduranga@gmail.com>
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <promopopup_settings translate="title" module="promopopup">
+                                        <title>Settings Section</title>
+                                        <sort_order>0</sort_order>
+                                    </promopopup_settings>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
