@@ -1,5 +1,5 @@
 /**
- * Sample Exercise Module
+ * Magento 1.9 Community - Promo Popup
  * @category    DMS
  * @package     DMS_PromoPopup
  * @date        2018-02-12
